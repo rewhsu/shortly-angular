@@ -28,3 +28,5 @@ angular.module('shortly.auth', [])
       });
   };
 });
+ 
+ 

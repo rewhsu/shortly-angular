@@ -25,6 +25,8 @@ module.exports = {
       return next(new Error('Not a valid url'));
     }
 
+    res.status = 201;
+
     findLink({url: url})
       .then(function (match) {
         if (match) {

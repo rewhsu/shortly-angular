@@ -16,12 +16,14 @@ describe('Routing', function () {
 
   it('Should have /signin route, template, and controller', function () {
     expect($route.routes['/signin']).to.be.defined;
+    console.log($route.routes['/signin']);
     expect($route.routes['/signin'].controller).to.equal('AuthController');
     expect($route.routes['/signin'].templateUrl).to.equal('app/auth/signin.html');
   });
 
   it('Should have /links route, template, and controller', function () {
     expect($route.routes['/links']).to.be.defined;
+    console.log($route.routes['/links']);
     expect($route.routes['/links'].controller).to.equal('LinksController');
     expect($route.routes['/links'].templateUrl).to.equal('app/links/links.html');
   });

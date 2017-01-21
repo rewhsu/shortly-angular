@@ -1,3 +1,7 @@
-<div id='container'>
+<div id='container' ng-controller="LinksController">
   <!-- Your html here -->
+  <h1>Links</h1>
+  <ul>
+    <li ng-repeat="link in Links track by $index"></li>
+  </ul>
 </div>
