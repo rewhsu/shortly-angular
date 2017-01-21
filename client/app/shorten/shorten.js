@@ -4,13 +4,7 @@ angular.module('shortly.shorten', [])
   // Your code here
   $scope.link = {};
   $scope.addLink = function(link) {
-    return $http({
-      method: 'POST',
-      url: '/api/links',
-      data: link
-    }).then(function (resp) {
-      return resp.data;
-    });
+    Links.addOne({url: link});
   };
 
 });

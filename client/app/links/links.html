@@ -1,7 +1,14 @@
 <div id='container' ng-controller="LinksController">
   <!-- Your html here -->
   <h1>Links</h1>
-  <ul>
-    <li ng-repeat="link in Links track by $index"></li>
-  </ul>
+  <!-- <div ng-repeat="link in data.links"> -->
+    <div class="link" ng-repeat="link in data.links">
+      <div class="info">
+        <img src="{{link.url}}/favicon.ico" />
+        <div class="visits"><span class="count">{{link.visits}}</span></div>
+        <div class="title">{{link.title}}</div>  
+        <a href={{link.baseUrl}}/{{link.code}}>{{link.baseUrl}}/{{link.code}}</a>
+      </div>
+    </div>
+  </div>
 </div>
